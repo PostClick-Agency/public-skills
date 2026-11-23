@@ -35,6 +35,8 @@ Die häufigste Korrektur in unseren UI-Reviews ist ein einziges Wort: „raus“
 
 In Claude Code direkt: `/ui-decluttering:ui-decluttering`
 
+Von selbst zieht Claude den Skill bei solchen Anfragen bisher selten heran: In unserem Test mit 20 Anfragen (Stand 2026-11-23) hat er bei 10 passenden Anfragen kaum ausgelöst, auch nicht mit längeren Beschreibungen. Verlässlich wird es, wenn Du ihn direkt aufrufst oder in die `CLAUDE.md` Deines Projekts schreibst: „Vor Änderungen an Produkt-Screens den Skill ui-decluttering nutzen.“
+
 ## Inhalt
 
 | Pfad | Zweck |
