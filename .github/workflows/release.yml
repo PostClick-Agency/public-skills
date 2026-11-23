@@ -1,16 +1,17 @@
-# Baut bei jedem Tag v* je Skill eine ZIP für den Upload in claude.ai
-# (Ordner des Skills als Wurzel der ZIP) und hängt sie an das Release.
-name: Release
+# Hängt an jedes veröffentlichte Release je Skill eine ZIP für den Upload in
+# claude.ai (Ordner des Skills als Wurzel der ZIP).
+# Release anlegen: GitHub → Releases → Draft a new release → Tag vX.Y.Z → Publish.
+name: Release-ZIPs
 
 on:
-  push:
-    tags: ["v*"]
+  release:
+    types: [published]
 
 permissions:
   contents: write
 
 jobs:
-  release:
+  zips:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,7 +23,8 @@ jobs:
             (cd "$(dirname "$skill")" && zip -r "$GITHUB_WORKSPACE/dist/$name.zip" "$name")
           done
           ls -l dist
-      - name: Release anlegen
+      - name: An das Release hängen
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release create "$GITHUB_REF_NAME" dist/*.zip --generate-notes
+          TAG: ${{ github.event.release.tag_name }}
+        run: gh release upload "$TAG" dist/*.zip --clobber

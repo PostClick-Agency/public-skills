@@ -58,7 +58,7 @@ plugins/<skill>/
   skills/<skill>/SKILL.md              der Skill selbst
   skills/<skill>/references/           Wissen, das Claude bei Bedarf nachlädt
   skills/<skill>/templates/            Vorlagen für das Ergebnis
-.github/workflows/release.yml          baut bei jedem Tag v* die ZIPs für claude.ai
+.github/workflows/release.yml          hängt an jedes Release die ZIPs für claude.ai
 ```
 
 ## Neuen Skill hinzufügen
@@ -67,7 +67,7 @@ plugins/<skill>/
 2. `description` in `SKILL.md` unter 200 Zeichen halten (claude.ai-Grenze laut Hilfe-Center).
 3. Eintrag in `.claude-plugin/marketplace.json` ergänzen und die Tabelle oben erweitern.
 4. Prüfen: `claude plugin validate .`
-5. Release: Tag `vX.Y.Z` pushen, der Workflow hängt die ZIPs an.
+5. Release: in GitHub unter Releases → Draft a new release einen Tag `vX.Y.Z` anlegen und veröffentlichen. Der Workflow hängt die ZIPs an.
 
 ## Mitmachen
 
