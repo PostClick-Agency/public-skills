@@ -1,6 +1,6 @@
 ---
 name: ui-decluttering
-description: Entrümpelt Produkt-Screens: Apps, Portale, Dashboards, Formulare, Einstellungen. Streicht Doppeltes, Erklärzeilen, interne Begriffe, überzählige Buttons. Nicht für Landingpages.
+description: Entrümpelt Produkt-Screens wie Apps, Portale, Dashboards, Formulare und Einstellungen. Streicht Doppeltes, Erklärzeilen, interne Begriffe, überzählige Buttons. Nicht für Landingpages.
 license: MIT
 ---
 
