@@ -1,0 +1,18 @@
+{
+  "name": "advertorial-struktur",
+  "version": "0.1.0",
+  "description": "Strukturiert Advertorials für D2C- und Health-Produkte nach einem 20-Kapitel-Framework mit Awareness-Routing und Proof-Architektur.",
+  "author": {
+    "name": "postclick.agency",
+    "url": "https://postclick.agency"
+  },
+  "homepage": "https://github.com/PostClick-Agency/public-skills",
+  "license": "MIT",
+  "keywords": [
+    "advertorial",
+    "copywriting",
+    "d2c",
+    "salespage",
+    "conversion"
+  ]
+}
