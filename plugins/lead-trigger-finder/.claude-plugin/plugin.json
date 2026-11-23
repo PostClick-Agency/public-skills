@@ -1,0 +1,9 @@
+{
+  "name": "lead-trigger-finder",
+  "version": "0.1.0",
+  "description": "Findet den passenden Lead-Trigger für eine Marke und plant ihn als Wert-Leiter mit Testplan.",
+  "author": { "name": "postclick.agency", "url": "https://postclick.agency" },
+  "homepage": "https://github.com/PostClick-Agency/public-skills",
+  "license": "MIT",
+  "keywords": ["lead-generierung", "lead-magnet", "funnel", "cro", "conversion"]
+}

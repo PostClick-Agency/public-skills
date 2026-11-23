@@ -1,0 +1,12 @@
+{
+  "name": "postclick",
+  "description": "Öffentlich verfügbare Skills von postclick.agency für Conversion-Rate-Optimierung, Funnel-Building, Wettbewerbsanalyse und mehr.",
+  "owner": { "name": "postclick.agency", "url": "https://postclick.agency" },
+  "plugins": [
+    {
+      "name": "lead-trigger-finder",
+      "source": "./plugins/lead-trigger-finder",
+      "description": "Findet den passenden Lead-Trigger für eine Marke und plant ihn als Wert-Leiter mit Testplan."
+    }
+  ]
+}
