@@ -9,6 +9,7 @@
 | Skill | Wofür | Blogpost |
 |---|---|---|
 | [lead-trigger-finder](plugins/lead-trigger-finder) | Findet den passenden Lead-Trigger für Deine Marke (Rechner, Quiz, Ratgeber, Konfigurator, Terminbuchung …) und plant ihn als Wert-Leiter mit Testplan. | [Lead-Trigger: Nicht das Formular macht den Lead](https://www.postclick.agency/magazin/lead-trigger) |
+| [ui-decluttering](plugins/ui-decluttering) | Entrümpelt Produkt-Screens (Apps, Portale, Dashboards, Formulare, Einstellungen): streicht Doppeltes, Erklärzeilen, interne Begriffe und überzählige Buttons, ohne Information, Pflichtangaben oder Barrierefreiheit zu opfern. Nicht für Landingpages. | – |
 
 ## Installation
 
@@ -58,6 +59,7 @@ plugins/<skill>/
   skills/<skill>/SKILL.md              der Skill selbst
   skills/<skill>/references/           Wissen, das Claude bei Bedarf nachlädt
   skills/<skill>/templates/            Vorlagen für das Ergebnis
+  skills/<skill>/evals/                Testfälle für `claude plugin eval` (nicht in der ZIP)
 .github/workflows/release.yml          hängt an jedes Release die ZIPs für claude.ai
 ```
 

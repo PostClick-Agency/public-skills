@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: einstellungen-screen
+expected_outcome: |
+  einstellungen.html ist direkt aufgeräumt: Überzeile, Einleitung, wiederholende Hilfetexte, interne Schlüssel, doppelte Schalterzustände und Toast sind weg; höchstens ein Primär-Button, Verwerfen ruhig, nur Konto löschen rot und mit Bestätigung; einspaltiges Profilformular mit Beschriftungen. Die Texte, die eine Entscheidung tragen (Wiederherstellungscodes, Export 7 Tage, Löschfrist 30 Tage und vorher exportieren), bleiben. Passwort und Zwei-Faktor-Anmeldung haben sprechende Links, Benachrichtigungen sind Schalter, der Export heißt „Daten exportieren“ und hat ein Icon, der API-Zugang bleibt erreichbar. Die Antwort ist kurz und nennt, was wegfällt.
+context:
+  scaffold_script: place-files.sh

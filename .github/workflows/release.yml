@@ -1,5 +1,5 @@
 # Hängt an jedes veröffentlichte Release je Skill eine ZIP für den Upload in
-# claude.ai (Ordner des Skills als Wurzel der ZIP).
+# claude.ai (Ordner des Skills als Wurzel der ZIP, ohne die Testfälle in evals/).
 # Release anlegen: GitHub → Releases → Draft a new release → Tag vX.Y.Z → Publish.
 name: Release-ZIPs
 
@@ -20,7 +20,7 @@ jobs:
           mkdir -p dist
           for skill in plugins/*/skills/*/; do
             name=$(basename "$skill")
-            (cd "$(dirname "$skill")" && zip -r "$GITHUB_WORKSPACE/dist/$name.zip" "$name")
+            (cd "$(dirname "$skill")" && zip -r "$GITHUB_WORKSPACE/dist/$name.zip" "$name" -x "$name/evals/*")
           done
           ls -l dist
       - name: An das Release hängen

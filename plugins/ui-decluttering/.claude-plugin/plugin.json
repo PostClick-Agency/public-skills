@@ -1,0 +1,9 @@
+{
+  "name": "ui-decluttering",
+  "version": "0.1.0",
+  "description": "Entrümpelt Produkt-Screens (Apps, Portale, Dashboards, Formulare, Einstellungen): streicht Doppeltes, Erklärzeilen, interne Begriffe und überzählige Buttons.",
+  "author": { "name": "postclick.agency", "url": "https://postclick.agency" },
+  "homepage": "https://github.com/PostClick-Agency/public-skills",
+  "license": "MIT",
+  "keywords": ["ux", "ui", "decluttering", "dashboard", "portal", "formular"]
+}

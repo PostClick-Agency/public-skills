@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Einstellungen – Kalkulo</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; background: #f3f4f6; color: #1a1a1a; }
+    main { max-width: 1100px; margin: 0 auto; padding: 32px 24px 80px; }
+    .crumbs { font-size: 13px; color: #888; }
+    .eyebrow { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: #2563eb; margin: 24px 0 0; }
+    h1 { margin: 4px 0 8px; font-size: 34px; }
+    .intro { color: #555; max-width: 720px; }
+    .tabs { display: flex; gap: 8px; margin: 24px 0; }
+    .tabs a { padding: 8px 14px; border-radius: 999px; background: #e5e7eb; color: #1a1a1a; text-decoration: none; font-size: 14px; }
+    .tabs a.aktiv { background: #1a1a1a; color: #fff; }
+    section { background: #fff; border-radius: 18px; padding: 24px; margin-bottom: 20px; }
+    section h2 { margin: 0 0 4px; font-size: 22px; }
+    .sub { color: #666; margin: 0 0 16px; }
+    .zeile { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-top: 1px solid #eee; }
+    .zeile small { display: block; color: #777; }
+    .key { font-family: monospace; font-size: 11px; color: #aaa; }
+    .an { color: #16a34a; font-size: 13px; margin-left: 8px; }
+    .pro { font-size: 11px; background: #fde68a; color: #92400e; padding: 2px 8px; border-radius: 999px; margin-left: 6px; }
+    .upsell { background: #fffbeb; border: 1px solid #fde68a; padding: 12px 16px; border-radius: 12px; margin-top: 12px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    input[type=text], input[type=email], input[type=tel] { padding: 12px; border: 1px solid #ccc; border-radius: 10px; font-size: 15px; }
+    .btn { padding: 10px 20px; border-radius: 999px; border: 0; font-size: 15px; cursor: pointer; }
+    .primary { background: #2563eb; color: #fff; box-shadow: 0 0 18px rgba(37,99,235,.45); }
+    .primary:disabled { background: #cbd5e1; box-shadow: none; }
+    .danger { background: #dc2626; color: #fff; }
+    .aktionen { display: flex; gap: 10px; margin-top: 16px; }
+    .toast { position: fixed; top: 20px; right: 20px; background: #16a34a; color: #fff; padding: 12px 18px; border-radius: 10px; display: none; }
+    footer { font-size: 12px; color: #aaa; margin-top: 24px; }
+  </style>
+</head>
+<body>
+<main>
+  <p class="crumbs">Start / Konto / Einstellungen / Allgemein</p>
+  <p class="eyebrow">Konto</p>
+  <h1>Einstellungen</h1>
+  <p class="intro">Hier kannst Du alle Einstellungen Deines Kontos anpassen. Änderungen werden erst übernommen, wenn Du im jeweiligen Abschnitt auf „Speichern“ klickst. Bei Fragen wende Dich gerne an unseren Support. Wir helfen Dir weiter!</p>
+
+  <nav class="tabs">
+    <a class="aktiv" href="#profil">Allgemein</a>
+    <a href="#benachrichtigungen">Benachrichtigungen</a>
+    <a href="#sicherheit">Sicherheit</a>
+    <a href="#daten">Daten</a>
+    <a href="#erweitert">Erweitert</a>
+  </nav>
+
+  <section id="profil">
+    <h2>Profil</h2>
+    <p class="sub">In diesem Abschnitt kannst Du Deine persönlichen Daten bearbeiten.</p>
+    <form class="grid" onsubmit="event.preventDefault(); zeigeToast();">
+      <input type="text" placeholder="Vorname" value="Anna">
+      <input type="text" placeholder="Nachname" value="Berger">
+      <input type="email" placeholder="E-Mail-Adresse" value="anna@beispiel-betrieb.de">
+      <input type="tel" placeholder="Telefon">
+      <input type="text" placeholder="Firma" value="Berger Haustechnik">
+      <input type="text" placeholder="USt-IdNr.">
+    </form>
+    <div class="aktionen">
+      <button class="btn primary" disabled id="profil-speichern" onclick="zeigeToast()">Speichern</button>
+      <button class="btn danger" onclick="location.reload()">Änderungen verwerfen</button>
+    </div>
+  </section>
+
+  <section id="benachrichtigungen">
+    <h2>Benachrichtigungen</h2>
+    <p class="sub">Lege fest, worüber wir Dich informieren sollen.</p>
+    <div class="zeile">
+      <div>E-Mail-Benachrichtigungen <span class="key">(notif_email_enabled)</span>
+        <small>Erhalte Benachrichtigungen per E-Mail.</small></div>
+      <div><input type="checkbox" checked aria-label="E-Mail-Benachrichtigungen"><span class="an">✓ Aktiviert</span></div>
+    </div>
+    <div class="zeile">
+      <div>Wochenübersicht <span class="key">(notif_weekly_digest)</span>
+        <small>Erhalte jeden Montag eine Wochenübersicht.</small></div>
+      <div><input type="checkbox" checked aria-label="Wochenübersicht"><span class="an">✓ Aktiviert</span></div>
+    </div>
+    <div class="zeile">
+      <div>Push-Benachrichtigungen <span class="pro">PRO</span> <span class="key">(notif_push_v2)</span>
+        <small>Erhalte Push-Benachrichtigungen auf Dein Handy.</small></div>
+      <div><input type="checkbox" disabled aria-label="Push-Benachrichtigungen"><span class="an" style="color:#999">✗ Deaktiviert</span></div>
+    </div>
+    <div class="upsell">⭐ Mit Kalkulo Pro bekommst Du Push-Benachrichtigungen, unbegrenzte Projekte und Prioritäts-Support. <a href="/pro">Jetzt upgraden</a></div>
+    <div class="aktionen">
+      <button class="btn primary" onclick="zeigeToast()">Speichern</button>
+      <button class="btn danger" onclick="location.reload()">Änderungen verwerfen</button>
+    </div>
+  </section>
+
+  <section id="sicherheit">
+    <h2>Sicherheit</h2>
+    <p class="sub">Schütze Dein Konto.</p>
+    <div class="zeile">
+      <div>Zwei-Faktor-Anmeldung <span class="key">(auth_2fa_totp)</span>
+        <small>Bei aktivierter Zwei-Faktor-Anmeldung brauchst Du beim Anmelden zusätzlich einen Code aus Deiner Authenticator-App. Bewahre Deine Wiederherstellungscodes sicher auf, denn ohne sie kommst Du bei Verlust Deines Handys nicht mehr in Dein Konto.</small></div>
+      <div><input type="checkbox" aria-label="Zwei-Faktor-Anmeldung"><span class="an" style="color:#999">✗ Deaktiviert</span></div>
+    </div>
+    <div class="zeile">
+      <div>Passwort ändern
+        <small>Hier kannst Du Dein Passwort ändern.</small></div>
+      <a href="/konto/passwort">Passwort ändern →</a>
+    </div>
+    <div class="aktionen">
+      <button class="btn primary" onclick="zeigeToast()">Speichern</button>
+      <button class="btn danger" onclick="location.reload()">Änderungen verwerfen</button>
+    </div>
+  </section>
+
+  <section id="daten">
+    <h2>Daten</h2>
+    <p class="sub">Verwalte Deine Daten.</p>
+    <div class="zeile">
+      <div>Datenexport
+        <small>Der Export enthält alle Projekte, Angebote und Rechnungen als CSV-Dateien. Du bekommst einen Download-Link per E-Mail, der 7 Tage gültig ist.</small></div>
+      <button class="btn primary" onclick="zeigeToast()">Datenexport anfordern</button>
+    </div>
+    <div class="zeile">
+      <div>Konto löschen
+        <small>Wenn Du Dein Konto löschst, werden alle Projekte, Angebote und Rechnungen nach 30 Tagen endgültig gelöscht. Rechnungen, die Du aufbewahren musst, exportiere vorher.</small></div>
+      <button class="btn danger" onclick="if (confirm('Konto wirklich löschen? Alle Daten werden nach 30 Tagen endgültig gelöscht.')) location.href='/konto/geloescht'">Konto löschen</button>
+    </div>
+  </section>
+
+  <section id="erweitert">
+    <h2>Erweitert</h2>
+    <p class="sub">Erweiterte Einstellungen für fortgeschrittene Nutzer.</p>
+    <div class="zeile">
+      <div>API-Zugang <span class="pro">PRO</span>
+        <small>Verbinde Kalkulo mit anderen Programmen.</small></div>
+      <a href="/pro">Upgrade auf Pro</a>
+    </div>
+  </section>
+
+  <footer>Tenant-ID: tnt_4821 · Plan: pro_monthly_v2 · Build 2026.11.3 · Zuletzt gespeichert: 2026-11-20T14:03:11Z</footer>
+</main>
+<div class="toast" id="toast">Einstellungen gespeichert ✅</div>
+<script>
+  function zeigeToast() {
+    const t = document.getElementById("toast");
+    t.style.display = "block";
+    setTimeout(() => (t.style.display = "none"), 2500);
+  }
+</script>
+</body>
+</html>

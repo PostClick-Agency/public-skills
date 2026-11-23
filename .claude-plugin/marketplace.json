@@ -7,6 +7,11 @@
       "name": "lead-trigger-finder",
       "source": "./plugins/lead-trigger-finder",
       "description": "Findet den passenden Lead-Trigger für eine Marke und plant ihn als Wert-Leiter mit Testplan."
+    },
+    {
+      "name": "ui-decluttering",
+      "source": "./plugins/ui-decluttering",
+      "description": "Entrümpelt Produkt-Screens (Apps, Portale, Dashboards, Formulare, Einstellungen): streicht Doppeltes, Erklärzeilen, interne Begriffe und überzählige Buttons."
     }
   ]
 }
