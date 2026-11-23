@@ -1,0 +1,18 @@
+{
+  "name": "b2b-positioning",
+  "version": "0.1.0",
+  "description": "Erarbeitet oder analysiert eine B2B-Positionierung und liefert ein Positioning-Deck mit 6 Slides.",
+  "author": {
+    "name": "postclick.agency",
+    "url": "https://postclick.agency"
+  },
+  "homepage": "https://github.com/PostClick-Agency/public-skills",
+  "license": "MIT",
+  "keywords": [
+    "positionierung",
+    "positioning",
+    "messaging",
+    "b2b",
+    "icp"
+  ]
+}

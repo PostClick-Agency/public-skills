@@ -1,0 +1,17 @@
+{
+  "name": "competitive-intelligence",
+  "version": "0.1.0",
+  "description": "Erstellt eine Wettbewerbsanalyse als Excel-Workbook mit 8 Tabs, inklusive Bedrohung, Partnerpotenzial und Empfehlungen.",
+  "author": {
+    "name": "postclick.agency",
+    "url": "https://postclick.agency"
+  },
+  "homepage": "https://github.com/PostClick-Agency/public-skills",
+  "license": "MIT",
+  "keywords": [
+    "wettbewerbsanalyse",
+    "competitive-intelligence",
+    "marktanalyse",
+    "strategie"
+  ]
+}

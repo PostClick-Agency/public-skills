@@ -1,0 +1,18 @@
+{
+  "name": "voc-jtbd-extractor",
+  "version": "0.1.0",
+  "description": "Extrahiert Voice of Customer und Jobs-to-be-Done aus Google-Maps-Reviews, mit Wording-Bank für Copy und Landingpages.",
+  "author": {
+    "name": "postclick.agency",
+    "url": "https://postclick.agency"
+  },
+  "homepage": "https://github.com/PostClick-Agency/public-skills",
+  "license": "MIT",
+  "keywords": [
+    "voice-of-customer",
+    "jtbd",
+    "reviews",
+    "zielgruppe",
+    "copywriting"
+  ]
+}

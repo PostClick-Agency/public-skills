@@ -1,12 +1,40 @@
 {
   "name": "postclick",
   "description": "Öffentlich verfügbare Skills von postclick.agency für Conversion-Rate-Optimierung, Funnel-Building, Wettbewerbsanalyse und mehr.",
-  "owner": { "name": "postclick.agency", "url": "https://postclick.agency" },
+  "owner": {
+    "name": "postclick.agency",
+    "url": "https://postclick.agency"
+  },
   "plugins": [
     {
       "name": "lead-trigger-finder",
       "source": "./plugins/lead-trigger-finder",
       "description": "Findet den passenden Lead-Trigger für eine Marke und plant ihn als Wert-Leiter mit Testplan."
+    },
+    {
+      "name": "copywriting",
+      "source": "./plugins/copywriting",
+      "description": "Schreibt und verbessert Web- und Performance-Copy für B2B- und D2C-Marken, mit Messaging nach Customer Stage."
+    },
+    {
+      "name": "advertorial-struktur",
+      "source": "./plugins/advertorial-struktur",
+      "description": "Strukturiert Advertorials für D2C- und Health-Produkte nach einem 20-Kapitel-Framework mit Awareness-Routing und Proof-Architektur."
+    },
+    {
+      "name": "b2b-positioning",
+      "source": "./plugins/b2b-positioning",
+      "description": "Erarbeitet oder analysiert eine B2B-Positionierung und liefert ein Positioning-Deck mit 6 Slides."
+    },
+    {
+      "name": "competitive-intelligence",
+      "source": "./plugins/competitive-intelligence",
+      "description": "Erstellt eine Wettbewerbsanalyse als Excel-Workbook mit 8 Tabs, inklusive Bedrohung, Partnerpotenzial und Empfehlungen."
+    },
+    {
+      "name": "voc-jtbd-extractor",
+      "source": "./plugins/voc-jtbd-extractor",
+      "description": "Extrahiert Voice of Customer und Jobs-to-be-Done aus Google-Maps-Reviews, mit Wording-Bank für Copy und Landingpages."
     },
     {
       "name": "ui-decluttering",

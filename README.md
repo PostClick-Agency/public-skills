@@ -9,6 +9,11 @@
 | Skill | Wofür | Blogpost |
 |---|---|---|
 | [lead-trigger-finder](plugins/lead-trigger-finder) | Findet den passenden Lead-Trigger für Deine Marke (Rechner, Quiz, Ratgeber, Konfigurator, Terminbuchung …) und plant ihn als Wert-Leiter mit Testplan. | [Lead-Trigger: Nicht das Formular macht den Lead](https://www.postclick.agency/magazin/lead-trigger) |
+| [copywriting](plugins/copywriting) | Schreibt und verbessert Web- und Performance-Copy für B2B- und D2C-Marken: Headlines, Hero, Landingpages, Service-Seiten, CTAs, Ads. Mit Messaging nach Customer Stage. | – |
+| [advertorial-struktur](plugins/advertorial-struktur) | Strukturiert Advertorials (Langform-Verkaufsseiten im „Bericht“-Stil) für D2C- und Health-Produkte nach einem 20-Kapitel-Framework, mit rechtlichen Leitplanken. | – |
+| [b2b-positioning](plugins/b2b-positioning) | Erarbeitet oder analysiert eine B2B-Positionierung nach April Dunford und Fletch. Ergebnis: Positioning-Deck mit 6 Slides. | – |
+| [competitive-intelligence](plugins/competitive-intelligence) | Wettbewerbsanalyse als Excel-Workbook mit 8 Tabs: Features, Geschäftsmodell, Preise, Bedrohung, Partnerpotenzial, Empfehlungen. | – |
+| [voc-jtbd-extractor](plugins/voc-jtbd-extractor) | Voice of Customer und Jobs-to-be-Done aus Google-Maps-Bewertungen, mit Wording-Bank aus Original-Zitaten für Copy und Landingpages. | – |
 | [ui-decluttering](plugins/ui-decluttering) | Entrümpelt Produkt-Screens (Apps, Portale, Dashboards, Formulare, Einstellungen): streicht Doppeltes, Erklärzeilen, interne Begriffe und überzählige Buttons, ohne Information, Pflichtangaben oder Barrierefreiheit zu opfern. Nicht für Landingpages. | – |
 
 ## Installation
