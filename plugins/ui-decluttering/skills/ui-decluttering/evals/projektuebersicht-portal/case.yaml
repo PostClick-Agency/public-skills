@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: projektuebersicht-portal
+expected_outcome: |
+  Projektuebersicht.tsx ist direkt entrümpelt: Tour, Toast, Begrüßung, Überzeilen, Erklärzeilen und interne Felder sind weg. Die Projekte stehen in einer neutralen Tabelle, filterbar über die Kopfzeile, der Status als ein Wort je Zeile, Löschen als Tonne-Icon mit Bestätigung. Genau ein Primär-Button, einspaltiges Formular mit Beschriftungen, Absenden nicht deaktiviert. Die Antwort ist kurz und nennt, was wegfällt.
+context:
+  scaffold_script: place-files.sh

@@ -14,6 +14,7 @@
 | [b2b-positioning](plugins/b2b-positioning) | Erarbeitet oder analysiert eine B2B-Positionierung nach April Dunford und Fletch. Ergebnis: Positioning-Deck mit 6 Slides. | – |
 | [competitive-intelligence](plugins/competitive-intelligence) | Wettbewerbsanalyse als Excel-Workbook mit 8 Tabs: Features, Geschäftsmodell, Preise, Bedrohung, Partnerpotenzial, Empfehlungen. | – |
 | [voc-jtbd-extractor](plugins/voc-jtbd-extractor) | Voice of Customer und Jobs-to-be-Done aus Google-Maps-Bewertungen, mit Wording-Bank aus Original-Zitaten für Copy und Landingpages. | – |
+| [ui-decluttering](plugins/ui-decluttering) | Entrümpelt Produkt-Screens (Apps, Portale, Dashboards, Formulare, Einstellungen): streicht Doppeltes, Erklärzeilen, interne Begriffe und überzählige Buttons, ohne Information, Pflichtangaben oder Barrierefreiheit zu opfern. Nicht für Landingpages. | – |
 
 ## Installation
 
@@ -63,6 +64,7 @@ plugins/<skill>/
   skills/<skill>/SKILL.md              der Skill selbst
   skills/<skill>/references/           Wissen, das Claude bei Bedarf nachlädt
   skills/<skill>/templates/            Vorlagen für das Ergebnis
+  skills/<skill>/evals/                Testfälle für `claude plugin eval` (nicht in der ZIP)
 .github/workflows/release.yml          hängt an jedes Release die ZIPs für claude.ai
 ```
 

@@ -35,6 +35,11 @@
       "name": "voc-jtbd-extractor",
       "source": "./plugins/voc-jtbd-extractor",
       "description": "Extrahiert Voice of Customer und Jobs-to-be-Done aus Google-Maps-Reviews, mit Wording-Bank für Copy und Landingpages."
+    },
+    {
+      "name": "ui-decluttering",
+      "source": "./plugins/ui-decluttering",
+      "description": "Entrümpelt Produkt-Screens (Apps, Portale, Dashboards, Formulare, Einstellungen): streicht Doppeltes, Erklärzeilen, interne Begriffe und überzählige Buttons."
     }
   ]
 }

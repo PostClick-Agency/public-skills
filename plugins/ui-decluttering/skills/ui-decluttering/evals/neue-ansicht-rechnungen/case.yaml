@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: neue-ansicht-rechnungen
+expected_outcome: |
+  Eine Markdown-Datei mit dem Aufbau der Ansicht: benennt die eine Frage, der nächste Schritt (offene Rechnung bezahlen) steht oben, genau eine Hauptaktion, kein Banner, keine Tour, keine Erklärtexte, Status als ein sichtbares Wort und farbsparsam, Liste über die Kopfzeile filterbar, wenige Spalten ohne interne Beleg-ID, einspaltiges SEPA-Formular mit aktivem Speichern-Button und Fehlern am Feld. Mandatstext, Datenschutzhinweis und Ansprechpartnerin bleiben, PDF und Reklamieren bleiben erreichbar, Ansprache Sie. Gestrichene Wünsche mit Grund, offene Fragen.
+context:
+  scaffold_script: place-files.sh
